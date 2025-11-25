@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Top-left name (logo) */
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Main header in the center */
+header {
+    text-align: center;
+    padding-top: 80px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+}
