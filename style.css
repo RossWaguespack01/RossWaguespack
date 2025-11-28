@@ -1,46 +1,137 @@
 body {
-    margin: 0;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Remove browser's default spacing */
+    padding: 0;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+}
 
-/* Top-left name (logo) */
-.logo {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    font-size: 20px;
+/* Left side (your name) */
+.nav-left .logo {
+    font-size: 22px;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
-/* Main header in the center */
-header {
-    text-align: center;
-    padding-top: 80px;
-}
-
-header h1 {
-    font-size: 48px;
-    margin: 0;
-}
-/* Social icons in the top-right corner */
-.social-links {
+/* CENTER NAV LINKS */
+.nav-center {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* forces true centering */
+    display: flex;
+    gap: 35px;
+}
+
+.nav-center a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+/* RIGHT SOCIAL ICONS */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.nav-right img:hover {
+    transform: scale(1.15);
+}
+
+/* Text links */
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 0.5;
+}
+
+/* Social icons */
+.social-links {
     display: flex;
     gap: 12px;
 }
+
 .social-links img {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s;
 }
 
 .social-links img:hover {
     transform: scale(1.15);
+}
+
+/* Top-left name (logo) linking to home */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/* Nav links */
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 0.5;
+}
+
+/* Main header (pushed down because of navbar) */
+header {
+    text-align: center;
+    padding-top: 140px; /* push content below navbar cleanly */
+}
+
+header h1 {
+    font-size: 70px; /* much bigger */
+    margin: 0;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 30px; /* larger */
+    font-weight: 300;
+    margin-top: 15px;
+    color: #444;
+}
+
+.image-card p {
+    margin-top: 12px;
+    font-size: 22px; /* larger labels */
 }
 
 .subtitle {
@@ -48,4 +139,32 @@ header h1 {
     font-weight: 300;
     margin-top: 10px;
     color: #444;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 35px;  /* closer together */
+    margin-top: 80px;
+}
+
+.image-card {
+    text-align: center;
+    width: 340px; /* larger images */
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-card img:hover {
+    transform: scale(1.05);
+}
+
+.image-card p {
+    margin-top: 10px;
+    font-size: 18px;
 }
