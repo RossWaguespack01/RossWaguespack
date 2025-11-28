@@ -7,36 +7,35 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: white;
-    height: 70px;
+    height: 80px; /* Slightly taller */
+    background: rgb(255, 67, 67);
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 25px;
+    align-items: center;
+    padding: 0 45px;
+    box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 10;
 }
 
 /* Left side (your name) */
 .nav-left .logo {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 26px; /* Bigger */
+    font-weight: 700;
     text-decoration: none;
     color: black;
 }
 
-/* CENTER NAV LINKS */
 .nav-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* forces true centering */
     display: flex;
     gap: 35px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-center a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px; /* Bigger */
     color: black;
     font-weight: 500;
 }
@@ -45,24 +44,19 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 18px;
+    flex-shrink: 0;
 }
 
 .nav-right img {
-    width: 24px;
-    height: 24px;
-    display: block;
-}
-
-.nav-right img {
-    width: 24px;
-    height: 24px;
+    width: 28px; /* Bigger */
+    height: 28px;
     cursor: pointer;
     transition: transform 0.2s;
 }
 
 .nav-right img:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
 }
 
 /* Text links */
@@ -119,7 +113,7 @@ body {
 /* Main header (pushed down because of navbar) */
 header {
     text-align: center;
-    padding-top: 140px; /* push content below navbar cleanly */
+    padding-top: 160px; /* More breathing room */
 }
 
 header h1 {
@@ -173,4 +167,25 @@ header h1 {
 .image-card p {
     margin-top: 10px;
     font-size: 18px;
+}
+
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.thumbnail-container {
+    width: 350px; /* you can adjust this */
+    height: 200px; /* consistent fixed height */
+    overflow: hidden;
+    border-radius: 8px; /* optional */
+    margin: 0 auto;
+}
+
+.thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
