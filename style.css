@@ -220,3 +220,38 @@ header h1 {
     border-radius: 10px;
     object-fit: cover;
 }
+
+.resume-section, 
+.spotify-section {
+    max-width: 900px;
+    margin: 140px auto 0 auto; /* pushes below navbar */
+    text-align: center;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.resume-description,
+.spotify-description {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.resume-image img,
+.spotify-image img {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Add spacing between the two sections */
+.spotify-section {
+    margin-top: 100px;
+}
