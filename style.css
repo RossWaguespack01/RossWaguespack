@@ -4,7 +4,8 @@ body {
 }
 
 .page-title {
-    font-size: 85px;
+    font-family: "Luckiest Guy";
+    font-size: 80px;
     font-weight: 800;
     margin: 0;
     text-align: center;
@@ -27,6 +28,7 @@ body {
 
 /* Left side (your name) */
 .nav-left .logo {
+    font-family: "Luckiest Guy";
     font-size: 26px; /* Bigger */
     font-weight: 700;
     text-decoration: none;
@@ -68,6 +70,7 @@ body {
 
 /* Text links */
 .nav-links a {
+    font-family: "Luckiest Guy";
     margin-left: 20px;
     text-decoration: none;
     font-size: 16px;
@@ -98,6 +101,7 @@ body {
 
 /* Top-left name (logo) linking to home */
 .logo {
+    font-family: "Luckiest Guy";
     font-size: 26px;
     font-weight: 800;
     text-decoration: none;
@@ -106,6 +110,7 @@ body {
 
 /* Nav links */
 .nav-links a {
+    font-family: "Luckiest Guy";
     margin-left: 20px;
     text-decoration: none;
     font-size: 16px;
@@ -124,12 +129,14 @@ header {
 }
 
 header h1 {
+    font-family: "Luckiest Guy";
     font-size: 70px; /* much bigger */
     margin: 0;
     font-weight: 800;
 }
 
 .subtitle {
+    font-family: "Roboto", sans-serif;
     font-size: 30px; /* larger */
     font-weight: 300;
     margin-top: 15px;
@@ -165,8 +172,9 @@ header h1 {
 }
 
 .image-card p {
+    font-family: "Luckiest Guy";
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .thumbnail {
@@ -237,12 +245,14 @@ header h1 {
 }
 
 .section-title {
+    font-family: "Luckiest Guy";
     font-size: 42px;
     margin-bottom: 15px;
 }
 
 .resume-description,
 .spotify-description {
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     margin-bottom: 25px;
     color: #333;
@@ -261,4 +271,19 @@ header h1 {
 /* Add spacing between the two sections */
 .spotify-section {
     margin-top: 100px;
+}
+
+.page-title,
+.image-card h3 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 32px;
+    text-align: center;
+}
+
+.image-card p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    line-height: 1.5;
 }
