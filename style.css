@@ -334,6 +334,33 @@ header h1 {
     line-height: 1.6;
     text-align: center;
 }
+/* Generic Section Titles */
+.section-title {
+    font-family: "Luckiest Guy";
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    margin: 80px 0 40px 0;
+}
+
+/* Demo Reel Description */
+.image-description {
+    font-family: "Roboto";
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 15px auto 0 auto;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* Subtitle for Spotify Canvas to match film titles */
+.film-subtitle {
+    font-family: "Luckiest Guy";
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
 
 /* ------------------------------ */
 /* STORY PAGE                    */
