@@ -1,21 +1,27 @@
+/* ------------------------------ */
+/* GLOBAL                        */
+/* ------------------------------ */
 body {
-    margin: 0; /* Remove browser's default spacing */
+    margin: 0;
     padding: 0;
 }
 
 .page-title {
     font-family: "Luckiest Guy";
-    font-size: 110px; /* ← adjust this number */
+    font-size: 110px;
     font-weight: 800;
     margin: 0;
     text-align: center;
 }
 
+/* ------------------------------ */
+/* NAVBAR                        */
+/* ------------------------------ */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px; /* Slightly taller */
+    height: 80px;
     background: rgb(255, 67, 67);
     display: flex;
     justify-content: space-between;
@@ -26,15 +32,15 @@ body {
     z-index: 10;
 }
 
-/* Left side (your name) */
-.nav-left .logo {
+.logo {
     font-family: "Luckiest Guy";
-    font-size: 26px; /* Bigger */
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: 400;
     text-decoration: none;
     color: black;
 }
 
+/* Nav center */
 .nav-center {
     display: flex;
     gap: 35px;
@@ -44,12 +50,12 @@ body {
 
 .nav-center a {
     text-decoration: none;
-    font-size: 20px; /* Bigger */
+    font-size: 20px;
     color: black;
     font-weight: 500;
 }
 
-/* RIGHT SOCIAL ICONS */
+/* Right icons */
 .nav-right {
     display: flex;
     align-items: center;
@@ -58,7 +64,7 @@ body {
 }
 
 .nav-right img {
-    width: 28px; /* Bigger */
+    width: 28px;
     height: 28px;
     cursor: pointer;
     transition: transform 0.2s;
@@ -68,68 +74,12 @@ body {
     transform: scale(1.2);
 }
 
-/* Text links */
-.nav-links {
-    display: flex;
-    gap: 30px; /* Space between links */
-    margin-right: 25px;
-}
-.nav-links a {
-    font-family: "Luckiest Guy";
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    color: black;
-    transition: opacity 0.2s;
-}
-
-.nav-links a:hover {
-    opacity: 0.5;
-}
-
-/* Social icons */
-.social-links {
-    display: flex;
-    gap: 12px;
-}
-
-.social-links img {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.social-links img:hover {
-    transform: scale(1.15);
-}
-
-/* Top-left name (logo) linking to home */
-.logo {
-    font-family: 'Luckiest Guy';
-    font-size: 26px;
-    font-weight: 400; /* Luckiest Guy doesn't use 800, this fixes the weird thickness */
-    text-decoration: none;
-    color: black;
-}
-
-/* Nav links */
-.nav-links a {
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    color: black;
-    transition: opacity 0.2s;
-}
-
-.nav-links a:hover {
-    opacity: 0.5;
-}
-
-/* Main header (pushed down because of navbar) */
+/* ------------------------------ */
+/* HEADER / TITLES               */
+/* ------------------------------ */
 header {
     text-align: center;
-    padding-top: 160px; /* More breathing room */
+    padding-top: 160px;
 }
 
 header h1 {
@@ -140,47 +90,45 @@ header h1 {
 
 .subtitle {
     font-family: "Roboto", sans-serif;
-    font-size: 30px; /* larger */
+    font-size: 30px;
     font-weight: 300;
     margin-top: 15px;
     color: #444;
 }
 
-/* Default — used for Portfolio page descriptions */
-.image-card p {
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    text-align: center;
-    color: #000;
-    line-height: 1.5;
-}
-
-/* Home page (Portfolio / Story / Resume small titles) */
+/* ------------------------------ */
+/* HOME PAGE                      */
+/* ------------------------------ */
 .home-page .image-card p {
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Luckiest Guy";
     font-size: 36px;
     margin-top: 15px;
     line-height: normal;
 }
+
 .home-page header h1,
 .home-page .page-title {
-  font-family: "Luckiest Guy", cursive;
-  font-size: clamp(36px, 7vw, 120px); /* reduced again */
-  line-height: 0.95;
-  letter-spacing: 1px;
-  margin: 0;
-  font-weight: 800;
-  text-align: center;
+    font-family: "Luckiest Guy";
+    font-size: clamp(36px, 7vw, 120px);
+    line-height: 0.95;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 800;
+    text-align: center;
 }
 
 .home-page header {
-  padding-top: 140px; /* adjusts position to keep it visually centered */
+    padding-top: 140px;
 }
 
 .home-page .subtitle {
-  margin-top: 12px;
-  font-size: clamp(15px, 2vw, 26px);
+    margin-top: 12px;
+    font-size: clamp(15px, 2vw, 26px);
 }
+
+/* ------------------------------ */
+/* IMAGE ROWS / CARDS            */
+/* ------------------------------ */
 .image-row {
     display: flex;
     justify-content: center;
@@ -191,7 +139,7 @@ header h1 {
 
 .image-card {
     text-align: center;
-    width: 340px; /* larger images */
+    width: 340px;
 }
 
 .image-card img {
@@ -205,17 +153,32 @@ header h1 {
     transform: scale(1.05);
 }
 
+.image-card h3 {
+    font-family: "Luckiest Guy";
+    font-size: 32px;
+    text-align: center;
+}
+
+.image-card p {
+    font-family: "Roboto";
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    line-height: 1.5;
+}
+
+/* Thumbnail containers */
 .thumbnail {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .thumbnail-container {
-    width: 350px; /* you can adjust this */
-    height: 200px; /* consistent fixed height */
+    width: 350px;
+    height: 200px;
     overflow: hidden;
-    border-radius: 8px; /* optional */
+    border-radius: 8px;
     margin: 0 auto;
 }
 
@@ -223,15 +186,17 @@ header h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
+/* ------------------------------ */
+/* ABOUT PAGE                    */
+/* ------------------------------ */
 .about-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1100px;
-    margin: 140px auto 0 auto; /* pushes content below navbar */
+    margin: 140px auto 0 auto;
     padding: 20px;
     gap: 40px;
 }
@@ -241,11 +206,14 @@ header h1 {
 }
 
 .about-text h1 {
+    font-family: "Luckiest Guy";
     font-size: 50px;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 
 .about-text p {
+    font-family: "Roboto";
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 18px;
@@ -264,73 +232,61 @@ header h1 {
     object-fit: cover;
 }
 
-.resume-section, 
-.spotify-section {
+/* ------------------------------ */
+/* RESUME PAGE                   */
+/* ------------------------------ */
+.resume-page .resume-section {
     max-width: 900px;
-    margin: 140px auto 0 auto; /* pushes below navbar */
+    margin: 140px auto 60px auto;
     text-align: center;
-    padding: 20px;
 }
 
-.section-title {
+.resume-page .resume-title {
     font-family: "Luckiest Guy";
     font-size: 150px;
-    margin-bottom: 15px;
+    margin: 0 0 10px 0;
 }
 
-.resume-description {
-    display: none;
-}
-
-.resume-description,
-.spotify-description {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    margin-bottom: 25px;
+.resume-page .resume-description {
+    font-family: "Roboto";
+    font-size: 22px;
     color: #333;
-    line-height: 1.6;
-}
-.resume-image img {
-    margin-top: 20px; /* Just a little space below title */
+    margin-bottom: 40px;
+    line-height: 1.5;
 }
 
-.resume-image img,
-.spotify-image img {
-    width: 100%;
-    max-width: 750px;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-}
-.resume-title {
-    text-align: center;
-    font-family: 'Luckiest Guy', sans-serif;
-    font-size: 140px;
-    margin-top: 160px; /* Push down under navbar */
-}
-.resume-section {
-    margin: 80px auto 0 auto; /* slightly closer to navbar */
-    text-align: center;
-    padding: 0;
+/* Download box */
+.resume-page .resume-download-box {
+    text-decoration: none;
+    display: inline-block;
 }
 
-/* Add spacing between the two sections */
-.spotify-section {
-    margin-top: 100px;
+.resume-page .resume-box-inner {
+    background: rgb(255, 67, 67);
+    color: black;
+    font-family: "Luckiest Guy";
+    font-size: 40px;
+    padding: 40px 60px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-
-.image-card h3 {
-    font-family: "Luckiest Guy", cursive;
-    font-size: 32px;
-    text-align: center;
+.resume-page .resume-box-inner:hover {
+    transform: scale(1.07);
+    background: rgb(255, 90, 90);
 }
 
+/* ------------------------------ */
+/* PORTFOLIO PAGE                */
+/* ------------------------------ */
 .portfolio-page header {
-    padding-top: 150px; /* more breathing room below red navbar */
+    padding-top: 150px;
 }
+
 .portfolio-description {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-size: 24px;
     font-weight: 300;
     color: #444;
@@ -340,28 +296,16 @@ header h1 {
     line-height: 1.5;
 }
 
-/* Demo Reel card spacing tweak */
 .demo-reel {
-    margin-bottom: 50px; /* add breathing room before the next row */
-}
-.about-page .logo {
-    font-family: "Luckiest Guy";
+    margin-bottom: 50px;
 }
 
-.about-page .about-text h1 {
-    font-family: "Luckiest Guy";
-    font-size: 50px;
-    font-weight: 800;
-}
-
-.about-page .about-text p {
-    font-family: "Roboto";
-    font-size: 20px;
-    line-height: 1.6;
-}
+/* ------------------------------ */
+/* SPOTIFY SECTION               */
+/* ------------------------------ */
 .spotify-section {
     max-width: 900px;
-    margin: 40px auto 0 auto; /* reduced from 120px */
+    margin: 40px auto 0 auto;
     text-align: center;
     padding: 0 20px;
 }
@@ -369,7 +313,7 @@ header h1 {
 .spotify-title {
     font-family: "Luckiest Guy";
     font-weight: 800;
-    font-size: 100px; /* adjust if needed */
+    font-size: 100px;
     margin: 0 0 20px 0;
     text-align: center;
 }
@@ -385,38 +329,41 @@ header h1 {
 .spotify-description {
     max-width: 600px;
     margin: 0 auto;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-size: 22px;
     line-height: 1.6;
     text-align: center;
 }
 
+/* ------------------------------ */
+/* STORY PAGE                    */
+/* ------------------------------ */
 .page-title-story {
     margin-top: 140px;
     text-align: center;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 70px; /* Slightly bigger & bolder section title */
+    font-family: "Luckiest Guy";
+    font-size: 70px;
 }
 
 .page-description-story {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-size: 24px;
     text-align: center;
-    margin: -10px auto 40px auto; /* Pulls it closer to title */
+    margin: -10px auto 40px auto;
     max-width: 700px;
     color: #444;
 }
 
 .story-section-title {
-    font-family: "Luckiest Guy", sans-serif;
+    font-family: "Luckiest Guy";
     font-size: 50px;
     text-align: center;
-    margin: 110px 0 25px; /* Increased top margin (from 70px → 110px) */
+    margin: 110px 0 25px;
     color: black;
 }
 
 .story-section-title:first-of-type {
-    margin-top: 130px; /* Increased from 60px for more space under description */
+    margin-top: 130px;
 }
 
 .story-gallery {
@@ -434,81 +381,77 @@ header h1 {
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
-.contact-section {
-    max-width: 800px;
+/* ------------------------------ */
+/* CONTACT PAGE                  */
+/* ------------------------------ */
+.contact-page .contact-section {
+    max-width: 900px;
     margin: 140px auto 60px auto;
     text-align: center;
     padding: 0 20px;
 }
 
-.contact-section h1 {
-    font-family: 'Luckiest Guy', cursive;
+.contact-page .contact-section h1 {
+    font-family: 'Luckiest Guy';
     font-size: 60px;
     margin-bottom: 10px;
 }
 
-.contact-section p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #444;
-    margin-bottom: 30px;
-}
-
-.contact-form {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: left;
-}
-
-.contact-form label {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    margin-top: 15px;
-    display: block;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    margin-top: 8px;
-    box-sizing: border-box;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #000;
-    outline: none;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 14px;
+.contact-page .contact-section p {
+    font-family: 'Roboto';
     font-size: 20px;
-    font-family: 'Luckiest Guy', cursive;
-    border: none;
-    background: #000;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 25px;
-    transition: 0.2s ease;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.contact-form button:hover {
-    opacity: 0.8;
+.contact-email {
+    font-size: 24px !important;
+    font-weight: 500;
+    margin-bottom: 40px !important;
 }
 
-.success-message {
-    font-family: 'Roboto', sans-serif;
-    color: green;
-    font-size: 18px;
+/* Social row */
+.contact-social-row {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
+.contact-social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-social-item img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.2s ease;
+}
+
+.contact-social-item img:hover {
+    transform: scale(1.15);
+}
+
+.contact-social-item span {
+    margin-top: 12px;
+    font-family: "Luckiest Guy";
+    font-size: 28px;
+    color: black;
+}
+
+.contact-image {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}

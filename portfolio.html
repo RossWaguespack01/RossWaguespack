@@ -1,87 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
     <title>Portfolio</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-   <nav class="navbar">
-    <a href="index.html" class="logo">Ross Waguespack</a>
 
-    <div class="nav-center">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+<body class="portfolio-page">
 
-    <div class="nav-right">
-     <a href="https://www.linkedin.com" target="_blank">
-        <img src="icons/LinkedIn.svg" alt="LinkedIn">
-    </a>
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="icons/Instagram.svg" alt="Instagram">
-    </a>
-    <div class="nav-right">
-    <a href="https://www.youtube.com" target="_blank">
-        <img src="icons/Youtube.svg" alt="YouTube">
-    </a>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Ross Waguespack</a>
 
-</div>
-</nav>
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-    <header style="padding-top:140px; text-align:center;">
+        <div class="nav-right">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="icons/LinkedIn.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="icons/Instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="icons/Youtube.svg" alt="YouTube">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="portfolio-header" style="padding-top: 140px; text-align: center;">
         <h1 class="page-title">Portfolio</h1>
     </header>
-<p class="portfolio-description">
-    Explore my various films, freelance work, and demo reel.
-</p>
 
-    <!-- DEMO REEL — FIRST ROW -->
-<div class="image-row">
-    <div class="image-card demo-reel">
-        <a href="https://youtu.be/wVF-RfcQ_Rw" target="_blank">
-            <img src="img/demo.jpg" alt="Demo Reel">
-        </a>
-        <h3>Demo Reel</h3>
-    </div>
-</div>
-
-<!-- EXISTING PROJECTS — SECOND ROW -->
-<div class="image-row">
-    <div class="image-card">
-        <img src="./img/securus.jpg" alt="SECURUS">
-        <h3>SECURUS</h3>
-        <p>Welcome to SECURUS, protecting you from the horrors you don't even know about. Watch as 2 scientists; Neil and Pete, go through another mundane day of working at the most dangerous place on Earth.</p>
-    </div>
-
-    <div class="image-card">
-        <img src="./img/codfather.jpg" alt="The Codfather">
-        <h3>THE CODFATHER</h3>
-        <p>The feud between Otters and Penguins have reached a boiling point. Food and resources are at an all time low and the Emperor has to make a decision.</p>
-    </div>
-
-    <div class="image-card">
-        <img src="./img/widower.jpg" alt="The Widower">
-        <h3>THE WIDOWER</h3>
-        <p>Grief is love persevering, but sometimes grief can drive someone into making dangerous decisions.</p>
-    </div>
-</div>
-
-<div class="spotify-section">
-    <h1 class="spotify-title">Freelance</h1>
-
-    <div class="spotify-image">
-        <img src="img/Woolsey.jpg" alt="Spotify Canvas Animation">
-    </div>
-
-    <p class="spotify-description">
-        I created looping canvas animations for a Spotify artist to enhance their visual branding and presence.
+    <!-- Description -->
+    <p class="portfolio-description">
+        Explore my various films, freelance work, and demo reel.
     </p>
-</div>
+
+    <!-- DEMO REEL -->
+    <div class="image-row">
+        <div class="image-card demo-reel">
+            <a href="https://youtu.be/wVF-RfcQ_Rw" target="_blank">
+                <img src="img/demo.jpg" alt="Demo Reel">
+            </a>
+            <h3>Demo Reel</h3>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="image-row">
+        <div class="image-card">
+            <img src="img/securus.jpg" alt="SECURUS">
+            <h3>SECURUS</h3>
+            <p>
+                Welcome to SECURUS, protecting you from the horrors you don't even know about.
+                Watch as 2 scientists—Neil and Pete—go through another mundane day of working at the
+                most dangerous place on Earth.
+            </p>
+        </div>
+
+        <div class="image-card">
+            <img src="img/codfather.jpg" alt="The Codfather">
+            <h3>THE CODFATHER</h3>
+            <p>
+                The feud between Otters and Penguins has reached a boiling point. Food and resources
+                are at an all-time low, and the Emperor has to make a decision.
+            </p>
+        </div>
+
+        <div class="image-card">
+            <img src="img/widower.jpg" alt="The Widower">
+            <h3>THE WIDOWER</h3>
+            <p>
+                Grief is love persevering, but sometimes grief can drive someone into making
+                dangerous decisions.
+            </p>
+        </div>
+    </div>
+
+    <!-- FREELANCE SECTION -->
+    <div class="spotify-section">
+        <h1 class="spotify-title">Freelance</h1>
+
+        <div class="spotify-image">
+            <img src="img/Woolsey.jpg" alt="Spotify Canvas Animation">
+        </div>
+
+        <p class="spotify-description">
+            I created looping canvas animations for a Spotify artist to enhance their visual branding
+            and presence.
+        </p>
     </div>
 
 </body>

@@ -3,66 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="favicon.jpg">
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="contact-page">
 
-<nav class="navbar">
-  <div class="nav-left">
-    <a href="index.html" class="logo">Ross Waguespack</a>
-  </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="logo">Ross Waguespack</a>
+        </div>
 
-  <div class="nav-center">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html" style="opacity:1;">Contact</a>
-  </div>
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" style="opacity:1;">Contact</a>
+        </div>
 
-  <div class="nav-right">
-    <a href="https://www.linkedin.com/in/ross-waguespack-9845682ab/" target="_blank">
-      <img src="icons/LinkedIn.svg" alt="LinkedIn">
-    </a>
-    <a href="https://www.instagram.com/ross_waggy/" target="_blank">
-      <img src="icons/Instagram.svg" alt="Instagram">
-    </a>
-    <a href="https://www.youtube.com/@RossAnimations" target="_blank">
-      <img src="icons/Youtube.svg" alt="YouTube">
-    </a>
-  </div>
-</nav>
+        <div class="nav-right">
+            <a href="https://www.linkedin.com/in/ross-waguespack-9845682ab/" target="_blank">
+                <img src="icons/LinkedIn.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/ross_waggy/" target="_blank">
+                <img src="icons/Instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@RossAnimations" target="_blank">
+                <img src="icons/Youtube.svg" alt="YouTube">
+            </a>
+        </div>
+    </nav>
 
     <!-- Contact Section -->
     <section class="contact-section">
         <h1>Contact Me</h1>
-        <p>Have a question or want to work together? Send a message below!</p>
+        <p>If you'd like to connect or follow my work, feel free to reach out or visit my social links below!</p>
 
-        <form id="contactForm" action="https://formsubmit.co/rawag02is@gmail.com" method="POST" class="contact-form">
+        <!-- Email -->
+        <p class="contact-email">rawag02is@gmail.com</p>
 
-            <!-- Disable reCAPTCHA -->
-            <input type="hidden" name="_captcha" value="false">
+        <!-- Social Links Row -->
+        <div class="contact-social-row">
 
-            <!-- Redirect back to contact page after submit -->
-            <input type="hidden" name="_next" value="https://rawag02is.github.io/contact.html">
+            <a href="https://www.linkedin.com/in/ross-waguespack-9845682ab/" target="_blank" class="contact-social-item">
+                <img src="icons/LinkedIn.svg" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
 
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <a href="https://www.instagram.com/ross_waggy/" target="_blank" class="contact-social-item">
+                <img src="icons/Instagram.svg" alt="Instagram">
+                <span>Instagram</span>
+            </a>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <a href="https://www.youtube.com/@RossAnimations" target="_blank" class="contact-social-item">
+                <img src="icons/Youtube.svg" alt="YouTube">
+                <span>YouTube</span>
+            </a>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
 
-            <button type="submit">Send Message</button>
-
-        </form>
-
+        <!-- Contact Image -->
+        <div class="contact-image">
+            <img src="img/ls.jpg" alt="Additional Contact Image">
+        </div>
     </section>
 
 </body>
