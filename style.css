@@ -180,8 +180,8 @@ header h1 {
 }
 
 .thumbnail-container {
-    width: 350px;
-    height: 200px;
+    width: 880px;
+    height: 670px;
     overflow: hidden;
     border-radius: 8px;
     margin: 0 auto;
@@ -380,6 +380,15 @@ header h1 {
 }
 
 .page-description-story {
+    font-family: "Roboto";
+    font-size: 24px;
+    text-align: center;
+    margin: -10px auto 40px auto;
+    max-width: 700px;
+    color: #444;
+}
+
+.hike-description-story {
     font-family: "Roboto";
     font-size: 24px;
     text-align: center;
