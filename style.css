@@ -1,6 +1,7 @@
 /* ------------------------------ */
-/* GLOBAL                        */
+/* GLOBAL */
 /* ------------------------------ */
+
 body {
     margin: 0;
     padding: 0;
@@ -15,8 +16,9 @@ body {
 }
 
 /* ------------------------------ */
-/* NAVBAR                        */
+/* NAVBAR */
 /* ------------------------------ */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -75,8 +77,9 @@ body {
 }
 
 /* ------------------------------ */
-/* HEADER / TITLES               */
+/* HEADER / TITLES */
 /* ------------------------------ */
+
 header {
     text-align: center;
     padding-top: 160px;
@@ -97,13 +100,11 @@ header h1 {
 }
 
 /* ------------------------------ */
-/* HOME PAGE                      */
+/* HOME PAGE */
 /* ------------------------------ */
-.home-page .image-card p {
-    font-family: "Luckiest Guy";
-    font-size: 36px;
-    margin-top: 15px;
-    line-height: normal;
+
+.home-page header {
+    padding-top: 140px;
 }
 
 .home-page header h1,
@@ -117,18 +118,22 @@ header h1 {
     text-align: center;
 }
 
-.home-page header {
-    padding-top: 140px;
-}
-
 .home-page .subtitle {
     margin-top: 12px;
     font-size: clamp(15px, 2vw, 26px);
 }
 
+.home-page .image-card p {
+    font-family: "Luckiest Guy";
+    font-size: 36px;
+    margin-top: 15px;
+    line-height: normal;
+}
+
 /* ------------------------------ */
-/* IMAGE ROWS / CARDS            */
+/* IMAGE ROWS / CARDS */
 /* ------------------------------ */
+
 .image-row {
     display: flex;
     justify-content: center;
@@ -189,8 +194,9 @@ header h1 {
 }
 
 /* ------------------------------ */
-/* ABOUT PAGE                    */
+/* ABOUT PAGE */
 /* ------------------------------ */
+
 .about-section {
     display: flex;
     justify-content: space-between;
@@ -233,8 +239,9 @@ header h1 {
 }
 
 /* ------------------------------ */
-/* RESUME PAGE                   */
+/* RESUME PAGE */
 /* ------------------------------ */
+
 .resume-page .resume-section {
     max-width: 900px;
     margin: 140px auto 60px auto;
@@ -255,7 +262,6 @@ header h1 {
     line-height: 1.5;
 }
 
-/* Download box */
 .resume-page .resume-download-box {
     text-decoration: none;
     display: inline-block;
@@ -279,8 +285,9 @@ header h1 {
 }
 
 /* ------------------------------ */
-/* PORTFOLIO PAGE                */
+/* PORTFOLIO PAGE */
 /* ------------------------------ */
+
 .portfolio-page header {
     padding-top: 150px;
 }
@@ -301,8 +308,9 @@ header h1 {
 }
 
 /* ------------------------------ */
-/* SPOTIFY SECTION               */
+/* SPOTIFY SECTION */
 /* ------------------------------ */
+
 .spotify-section {
     max-width: 900px;
     margin: 40px auto 0 auto;
@@ -334,7 +342,7 @@ header h1 {
     line-height: 1.6;
     text-align: center;
 }
-/* Generic Section Titles */
+
 .section-title {
     font-family: "Luckiest Guy";
     font-size: 80px;
@@ -343,7 +351,6 @@ header h1 {
     margin: 80px 0 40px 0;
 }
 
-/* Demo Reel Description */
 .image-description {
     font-family: "Roboto";
     font-size: 20px;
@@ -354,7 +361,6 @@ header h1 {
     color: #444;
 }
 
-/* Subtitle for Spotify Canvas to match film titles */
 .film-subtitle {
     font-family: "Luckiest Guy";
     font-size: 40px;
@@ -362,10 +368,10 @@ header h1 {
     margin-top: 10px;
 }
 
+/* ------------------------------ */
+/* STORY PAGE */
+/* ------------------------------ */
 
-/* ------------------------------ */
-/* STORY PAGE                    */
-/* ------------------------------ */
 .page-title-story {
     margin-top: 140px;
     text-align: center;
@@ -410,8 +416,9 @@ header h1 {
 }
 
 /* ------------------------------ */
-/* CONTACT PAGE                  */
+/* CONTACT PAGE */
 /* ------------------------------ */
+
 .contact-page .contact-section {
     max-width: 900px;
     margin: 140px auto 60px auto;
@@ -438,7 +445,6 @@ header h1 {
     margin-bottom: 40px !important;
 }
 
-/* Social row */
 .contact-social-row {
     display: flex;
     justify-content: center;
@@ -482,74 +488,4 @@ header h1 {
     max-width: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-}
-
-/* ------------------------------ */
-/* STORY SLIDER                   */
-/* ------------------------------ */
-
-.story-project {
-    text-align: center;
-    margin-bottom: 120px;
-}
-
-.story-project-description {
-    font-family: "Roboto";
-    font-size: 20px;
-    max-width: 700px;
-    margin: 10px auto 40px auto;
-    color: #444;
-}
-
-.story-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-}
-
-.story-slide-container {
-    width: 85%;
-    max-width: 900px;
-    height: 500px;          /* 👈 ADD THIS */
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.story-slide {
-    display: none;
-    width: 100%;
-    height: 100%;           /* 👈 ADD THIS */
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-}
-
-.story-slide.active {
-    display: block;
-}
-
-/* Arrow buttons */
-
-.prev, .next {
-    background: rgb(255, 67, 67);
-    border: none;
-    font-size: 40px;
-    color: black;
-    cursor: pointer;
-    padding: 12px 18px;
-    border-radius: 10px;
-    transition: transform 0.2s ease;
-}
-
-.prev:hover,
-.next:hover {
-    transform: scale(1.1);
-}
-.story-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;    /* keeps boards from stretching */
-    display: block;
 }

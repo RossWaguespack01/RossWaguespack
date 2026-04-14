@@ -1,58 +1,48 @@
-console.log("Portfolio page loaded.");
-
 document.addEventListener("DOMContentLoaded", () => {
 
-    const cContainer = document.getElementById("c-slider");
-    if (!cContainer) return;
+  document.querySelectorAll(".story-slider").forEach(slider => {
 
-    const images = [];
+    const track = slider.querySelector(".story-slide-track");
+    const prev = slider.querySelector(".prev");
+    const next = slider.querySelector(".next");
 
-    // now clean + simple
-    for (let i = 1; i <= 145; i++) {
-        images.push(`img/c${i}.png`);
-    }
+    let index = 0;
 
-    images.forEach((src, i) => {
+    // AUTO-GENERATE storyboard images (c1 - c245)
+    if (slider.dataset.count) {
+      const prefix = slider.dataset.prefix;
+      const ext = slider.dataset.ext;
+      const count = parseInt(slider.dataset.count);
+
+      for (let i = 1; i <= count; i++) {
         const div = document.createElement("div");
-        div.classList.add("story-slide");
-        if (i === 0) div.classList.add("active");
+        div.className = "story-slide";
 
         const img = document.createElement("img");
-        img.src = src;
-        img.alt = `Board ${i + 1}`;
+        img.src = `${prefix}${i}.${ext}`;
 
         div.appendChild(img);
-        cContainer.appendChild(div);
-    });
-
-    // init sliders AFTER images exist
-    function initSlider(slider) {
-
-        const slides = slider.querySelectorAll(".story-slide");
-        const nextBtn = slider.querySelector(".next");
-        const prevBtn = slider.querySelector(".prev");
-
-        if (!nextBtn || !prevBtn || slides.length === 0) return;
-
-        let index = 0;
-
-        function showSlide(i) {
-            slides.forEach(s => s.classList.remove("active"));
-            slides[i].classList.add("active");
-        }
-
-        nextBtn.addEventListener("click", () => {
-            index = (index + 1) % slides.length;
-            showSlide(index);
-        });
-
-        prevBtn.addEventListener("click", () => {
-            index = (index - 1 + slides.length) % slides.length;
-            showSlide(index);
-        });
-
-        showSlide(index);
+        track.appendChild(div);
+      }
     }
 
-    document.querySelectorAll(".story-slider").forEach(initSlider);
+    const slides = track.querySelectorAll(".story-slide");
+
+    function update() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    next.addEventListener("click", () => {
+      index = (index + 1) % slides.length;
+      update();
+    });
+
+    prev.addEventListener("click", () => {
+      index = (index - 1 + slides.length) % slides.length;
+      update();
+    });
+
+    update();
+  });
+
 });
