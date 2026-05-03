@@ -304,8 +304,18 @@ header h1 {
 }
 
 .demo-reel {
-    margin-bottom: 50px;
+    width: 600px;
+    margin: 0 auto;
 }
+.demo-reel .thumbnail-container {
+    width: 600px;
+    height: 380px;
+}
+
+.demo-section .image-row {
+    justify-content: center;
+}
+
 
 /* ------------------------------ */
 /* SPOTIFY SECTION */
@@ -332,6 +342,12 @@ header h1 {
     margin: 0 auto 25px auto;
     display: block;
     border-radius: 10px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.spotify-image img:hover {
+    transform: scale(1.05);
 }
 
 .spotify-description {
