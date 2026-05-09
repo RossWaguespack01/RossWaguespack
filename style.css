@@ -244,14 +244,14 @@ header h1 {
 
 .resume-page .resume-section {
     max-width: 900px;
-    margin: 140px auto 60px auto;
+    margin: 140px auto 60px;
     text-align: center;
 }
 
 .resume-page .resume-title {
     font-family: "Luckiest Guy";
     font-size: 150px;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
 }
 
 .resume-page .resume-description {
@@ -284,15 +284,34 @@ header h1 {
     background: rgb(255, 90, 90);
 }
 
+.resume-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+}
+
+.resume-card {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+
+.resume-card-title {
+    font-family: "Luckiest Guy";
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: black;
+}
+
 .resume-image img {
     width: 100%;
     max-width: 700px;
-    margin: 20px auto 30px auto;
+    margin: 0 auto 25px;
     display: block;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
 /* ------------------------------ */
 /* PORTFOLIO PAGE */
 /* ------------------------------ */
